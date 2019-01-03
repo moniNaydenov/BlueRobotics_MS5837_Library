@@ -152,7 +152,7 @@ void MS5837::calculate() {
 	
 	if ( _model == MS5837_02BA ) {
 		TEMP = (TEMP-Ti);
-		P = (((D1*SENS2)/2097152l-OFF2)/32768l)/100;
+		P = (((D1*SENS2)/2097152l-OFF2)/32768l);
 	} else {
 		TEMP = (TEMP-Ti);
 		P = (((D1*SENS2)/2097152l-OFF2)/8192l)/10;
